@@ -1,14 +1,14 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
+  src: "./fonts/helvetica_regular.otf",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
 const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+  src: "./fonts/REBELTONITALIC-Light.ttf",
   weight: "100 900",
 });
 
@@ -21,9 +21,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistMono.variable} antialiased max-w-[1920px] m-auto`}
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
