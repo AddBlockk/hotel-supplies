@@ -2,7 +2,7 @@ import Image from "next/image";
 import main from "../public/main.png";
 import logo from "../public/logo.svg";
 import search from "../public/Search.svg";
-import favorite from "../public/favorite.svg";
+import Favorite from "../public/Favorite.svg";
 import bag from "../public/Bag.png";
 import user from "../public/User.png";
 import Link from "next/link";
@@ -47,7 +47,7 @@ export default function Home() {
               <Image src={search} alt="" />
             </li>
             <li>
-              <Image src={favorite} alt="" />
+              <Image src={Favorite} alt="" />
             </li>
             <li>
               <Image src={bag} alt="" />
