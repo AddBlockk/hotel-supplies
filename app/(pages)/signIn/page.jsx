@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { auth } from "../../firebase";
+// import { auth } from "../../firebase";
+import { auth } from "../../../app/firebase";
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
